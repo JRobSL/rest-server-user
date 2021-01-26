@@ -25,7 +25,6 @@ if (process.env.NODE_ENV === 'dev') {
     //urlDB = 'mongodb+srv://beeter:beeter@cluster0.slizp.mongodb.net/super-cafe';
     //Modificamos la url para que no puedan ver las credenciales mediante una variable de 
     //entorno en HEROKU 
-    //urlDB = process.env.MONGO_URI;
     urlDB = process.env.MONGODB_URI;
 }
 
