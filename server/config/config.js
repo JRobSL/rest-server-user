@@ -22,10 +22,11 @@ if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/super-cafe';
 } else {
     //URL MONGODB ATLAS
-    urlDB = 'mongodb+srv://beeter:beeter@cluster0.slizp.mongodb.net/super-cafe';
+    //urlDB = 'mongodb+srv://beeter:beeter@cluster0.slizp.mongodb.net/super-cafe';
     //Modificamos la url para que no puedan ver las credenciales mediante una variable de 
     //entorno en HEROKU 
     //urlDB = process.env.MONGO_URI;
+    urlDB = process.env.MONGODB_URI;
 }
 
 //VARIABLE PARA ALMACENAR URL
